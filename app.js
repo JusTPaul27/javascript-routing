@@ -1,5 +1,13 @@
 let pages = []
 
+const worker = new Worker('./myWorker.js');
+
+worker.addEventListener('message', logMessageFromWorker);
+
+function logMessageFromWorker(message) {
+    console.log('Messaggio ricevuto dal worker: ', message.data);
+}
+
 function loadedPages() {
     fetch("./pages.json")
     .then(response => response.json())
@@ -14,7 +22,6 @@ function displayPages(loadedPages) {
     const navMenu = document.getElementById('nav-menu');
 
     for (const page of pages) {
-        console.log(page);
         const a = document.createElement('a');
         const node = document.createTextNode(page.name);
         a.appendChild(node);
@@ -54,6 +61,10 @@ for (const page of pages) {
 const container = document.getElementById("page-container");
 
 container.innerHTML = selectedPage.html;
+}
+
+function activateWorker() {
+    worker.postMessage('Ciao finto lavoratore')
 }
 
 
