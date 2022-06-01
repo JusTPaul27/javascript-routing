@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Home",
+        "id": "home",
+        "html": "<h1>Home</h1> <p>Benvenuti nel mio sito</p>"
+    },
+    {
+        "name": "Chi siamo",
+        "id": "about",
+        "html": "<h1>About</h1> <p>Benvenuti nel mio sito about</p>"
+    },
+    {
+        "name": "Galleria",
+        "id": "gallery",
+        "html": "<h1>Galleria</h1> <p>Benvenuti nel mio sito sono nella galleria</p>"
+    },
+    {
+        "name": "Contatti",
+        "id": "contacts",
+        "html": "<h1>Contatti</h1> <p>Benvenuti nel mio sito e i miei contatti</p>"
+    },
+    {
+        "name": "Macchine",
+        "id": "car",
+        "html": "<h1>Cars</h1> <p>Benvenuti nel mio sito about MACCHINE</p>"
+    },
+    {
+        "name": "Topolino",
+        "id": "mickey",
+        "html": "<h1>Topolino</h1> <p>Benvenuti nel mio sito RATTO WALT DISNEY</p>"
+    }
+]
